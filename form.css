@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: blueviolet;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 70px;
+    text-align: left;
+    background: blueviolet;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+.kotak {
+    width: 70%;
+    padding: 10px;
+    border: 5px solid gray;
+    border-style: dotted;
+    border-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: blue;
+}
+
+li a {
+    display: block;
+    color: blueviolet;
+    padding: 8px 16px;
+    text-decoration: unset;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: blue;
+    color: blueviolet;
+}
+
+/*middlecolumn*/
+.middlecolumn {
+    float: left;
+    width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: blueviolet;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style Form Input*/
+input[type=text] {
+    width: 10%;
+    padding: 10px 10px;
+    margin: 20px 0;
+    box-sizing: initial;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: blueviolet;
+    margin-top: 20px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+/* table 1*/
+.table1 {
+    font-family: sans-serif;
+    color: blueviolet;
+    border-collapse: collapse;
+}
+
+.table1,
+th,
+td {
+    border: 1px solid #999;
+    padding: 8px 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px
+        wide,
+        make the two columns stack on top of each other instead of
+        next
+        to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn,
+    .kotak {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px
+        wide,
+        make the navigation links stack on top of each other instead
+        of
+        next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
